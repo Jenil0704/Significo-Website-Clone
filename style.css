@@ -1,0 +1,41 @@
+::root{
+    --salmon : #EF9D71;
+    --black : #000;
+    --white : #fff;
+    --cyan : #AEDEE0;
+    --dsalmon : #532521;
+    --dcyan : #1f2f32;
+}
+body{
+    transition: background-color ease-out .5s;
+}
+.vdodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+*::selection{
+    background-color: #EF9D71;
+}
+body[theme="black"]{
+    background-color: #000;
+}
+body[theme="black"] .section{
+    color: #fff;
+}
+body[theme="cyan"]{
+    background-color: #AEDEE0;
+}
+body[theme="cyan"] .section{
+    color: #1f2f32;
+}
+body[theme = "salmon"]{
+    background-color: #EF9D71;
+}
+body[theme = "salmon"] .section{
+    color: #532521;
+}
+body[theme = "white"]{
+    background-color: #fff;
+}
+body[theme = "white"] .section{
+    color: #000;
+}
